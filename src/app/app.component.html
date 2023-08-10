@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.component.css">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="card-container">
+
+            <div class="col" *ngFor="let data of dataCards; let i = index">
+                <app-datacard></app-datacard>
+            </div>
+
+        </div>
+        <app-login></app-login>
+    </div>
+</body>
